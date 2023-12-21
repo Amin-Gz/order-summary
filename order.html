@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>order-summery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      section {
+        background-image: url(./images/pattern-background-desktop.svg);
+      }
+      @media (max-width: 768px) {
+        section {
+          background-image: url(./images/pattern-background-mobile.svg);
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="w-screen h-screen bg-khaki-500 flex justify-center items-center p-0"
+  >
+    <section
+      class="w-full md:w-[1200px] h-full md:h-[650px] bg-[#E0E8FF] bg-contain md:bg-no-repeat flex justify-center items-center"
+    >
+      <div
+        class="w-[90%] md:w-[380px] h-[600px] bg-white rounded-xl shadow-md text-center"
+      >
+        <img
+          src="./images/illustration-hero.svg"
+          alt="dancing woman"
+          class="rounded-t-xl mb-3"
+        />
+        <h2 class="text-[#081E47] text-2xl font-bold">Order Summary</h2>
+        <p class="text-[#9196B3] m-[28px]">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div
+          class="musicContainer flex justify-between items-center m-[30px] p-[15px] bg-[#F8F9FF] rounded-lg"
+        >
+          <div class="flexitems flex justify-between items-center gap-[15px]">
+            <img src="./images/icon-music.svg" alt="" class="w-[38px]" />
+            <div class="flex flex-col justify-between items-start">
+              <p class="text-sm tracking-tighter font-semibold">Annual Plan</p>
+              <p class="text-xs text-[#9196B3]">$59.99/year</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="text-xs text-[#3525B7] underline hover:text-[#837CD1]"
+            >Change</a
+          >
+        </div>
+        <button
+          class="w-[320px] block text-center m-auto bg-[#372AE1] py-3 rounded-lg shadow-xl text-white text-[15px] mb-5 hover:bg-[#766BF2]"
+        >
+          Proceed to Payment
+        </button>
+        <a href="#" class="text-[#9196B3] hover:text-[#081E47]">cancel order</a>
+      </div>
+    </section>
+  </body>
+</html>
